@@ -64,8 +64,8 @@ func main() {
 	var m []Employee
 
 	//Decoding from json ( to m )
-	err2 := json.Unmarshal(content, &m)
-	if err2 != nil {
+	err = json.Unmarshal(content, &m)
+	if err != nil {
 		fmt.Println("error:", err)
 	}
 
